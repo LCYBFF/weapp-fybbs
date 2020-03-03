@@ -1,0 +1,38 @@
+<!--textages/textost/textost.wxml-->
+<view class="post-box">
+  <view class="post-title">
+    <text class="title">{{post.p_title}}</text>
+  </view>
+  <view class="post-info">
+  </view>
+  <view class="post-poster">
+    <view class="poster-avatar">
+      <image src="{{post.avatar}}"></image>
+    </view>
+    <view class="poster-info">
+      <view class="poster-name">{{post.u_nick}}</view>
+      <view class="post-time">{{post.p_createat}}</view>
+    </view>
+  </view>
+  <view class="post-detail-body">
+    <text class="post-details">
+      {{post.p_content}}
+    </text>
+  </view>
+</view>
+<view class="comments-box">
+  <view class="field-title">
+  </view>
+  <view class="comment-box" wx:for="{{comment}}" wx:for-item = "comment">
+    <view class="comment-about">
+      <view class="comment-avatar">
+        <image src="{{comment.avatar}}"></image>
+      </view>
+      <view class="comment-name">{{comment.u_nick}}</view>
+      <view class="comment-time">{{comment.c_createat}}</view>
+    </view>
+    <view class="comment-body">
+      <text>{{comment.c_content}}</text>
+    </view>
+  </view>
+</view>

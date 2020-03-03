@@ -1,0 +1,8 @@
+/* pages/rank.wxss */
+
+.level-badge {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 0;
+}

@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+<view class="weui-flex">
+  <view class="weui-flex__item">
+    <van-search
+      placeholder="请输入搜索关键词"
+      bind:search="toSearch"
+      value="{{keyword}}"
+    >
+    </van-search>
+  </view>
+</view>
+<view>
+  <van-tabs active="{{1}}" bind:change="tabChange">
+    <van-tab
+      wx:for="{{navList}}"
+      wx:for-item="nav"
+      title="{{nav.n_remark}}"
+      name="{{nav.n_id}}"
+     >
+     </van-tab>
+  </van-tabs>
+</view>
+<view class="weui-panel__bd">
+  <block wx:for="{{postList}}" wx:for-item="item">
+    <view class="weui-media-box weui-media-box_appmsg" id="{{item.p_id}}" bindtap="toDetail">
+      <view class="weui-media-box__hd">
+        <image class="weui-media-box__thumb" src="{{item.avatar}}"></image>
+      </view>
+      <view class="weui-media-box__bd">
+        <view>
+          <text class="barge">{{item.n_name}}</text>
+          <text class="weui-media-box__title">{{item.p_title}}</text>
+        </view>
+        <view>
+          <text class="list-info-username">{{item.u_nick}}</text>
+          <text class="weui-media-box__desc" style="display: inline;">{{item.p_createat}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

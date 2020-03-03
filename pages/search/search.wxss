@@ -1,0 +1,33 @@
+/* pages/search/search.wxss */
+
+
+.weui-media-box__hd {
+  margin-right: 16px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.weui-media-box__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  min-width: 0;
+}
+.barge {
+  top: -2px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0 5px;
+  margin-right: 10px;
+  font-size: 12px;
+  border: 1px solid #5FB878;
+  background: none;
+  color: #5FB878;
+}
+.list-info-username {
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(0,0,0,.5);
+}

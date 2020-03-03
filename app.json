@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rank/rank",
+    "pages/post/post",
+    "pages/search/search",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "凡云社区",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/index_normal.png",
+        "selectedIconPath": "images/icons/index_pressed.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排名",
+        "iconPath": "images/icons/section_normal.png",
+        "selectedIconPath": "images/icons/section_pressed.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "usingComponents": {
+    "we-tabbar": "weui/tabbar/tabbar",
+    "van-search": "miniprogram_npm/@vant/weapp/search/index",
+    "van-tab": "miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "miniprogram_npm/@vant/weapp/tabs/index",
+    "van-tag": "miniprogram_npm/@vant/weapp/tag/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

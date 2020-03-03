@@ -1,0 +1,22 @@
+<!--pages/rank.wxml-->
+
+<view class="weui-panel__bd">
+  <block wx:for="{{userList}}" wx:for-item="item">
+    <view class="weui-media-box weui-media-box_appmsg" id="{{item.u_id}}">
+      <view class="weui-media-box__hd">
+        <image class="weui-media-box__thumb" src="{{item.avatar}}"></image>
+      </view>
+      <view class="weui-media-box__bd">
+        <view>
+          <text class="weui-media-box__title">{{item.u_nick}}</text>
+        </view>
+        <view>
+          <text class="weui-media-box__desc" style="display: inline;">{{item.u_createat}}</text>
+        </view>
+        <view class="level-badge">
+          <van-tag plain type="success">Lv.{{item.exp}}</van-tag>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
